@@ -6,7 +6,7 @@
 /*   By: rgeral <rgeral@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 14:50:27 by rgeral            #+#    #+#             */
-/*   Updated: 2021/11/19 12:23:31 by rgeral           ###   ########.fr       */
+/*   Updated: 2021/11/29 10:49:55 by rgeral           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,7 @@ char	**ft_split(char const *s, char c)
 	str_res = ((char **)malloc((w + 1) * sizeof(char *)));
 	if (!str_res)
 		return (NULL);
-	ft_pick_str(&s[i], c, str_res, w);
 	str_res[w] = 0;
+	ft_pick_str(&s[i], c, str_res, w);
 	return (str_res);
 }
